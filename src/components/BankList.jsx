@@ -36,7 +36,7 @@ const BankList = () => {
       await axios.post("http://localhost:8000/api/banks", newBank);
       fetchBanks();
       e.target.reset();
-      Swal.fireEvent(
+      Swal.fire(
         "success",
         "Banco creado",
         "El banco ha sido creado exitosamente"
